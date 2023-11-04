@@ -1,60 +1,82 @@
 body{
     margin: 0;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .grid-container{
     display: grid;
-        grid-template-rows: 1fr 3fr 2fr;
-        grid-template-columns: 50vw 25vw 25vw;
-        height:80vh;
-        width:100%;
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+        grid-template-columns: 70vw 30vw;
+        height:100vh;
+        width:80%;
 }
 .header-container{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row 1;
     padding: 20px;
-    background-color:rgb(245, 246, 247);
+    background-color: rgb(171, 189, 171);
+    border-bottom-color: rgb(99, 99, 181);
+    border-bottom-style: solid;
+    border-bottom-width:medium;
+    font-color:rgb(99, 99, 181);
     
 
 }
 
 .main-container{
     grid-column: 1/2;
-    grid-row: 2;
+    grid-row: 2/4;
     background-image:"../myportfolio.github.io/FallScenery.jpg" ;
-    height:80vh;
-    color:antiquewhite
-    font-size: 30px;
-    text-align: center;       
+    background-size: cover;
+    
 }
 
-.footer-container1{
-    grid-row:3;
+.sidebar1{
+    grid-row:2/5;
+    grid-column: 2/3;
+    background-color: bisque;
+    /*padding-top:10px;*/
+    text-align: left;
+    /*padding: 15px;*/
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+
+
+.sidebar2{
+    grid-row: 3;
+    grid-column: 2/3;
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 18px;
+    border-radius: 90px;
+    
+
+}
+
+.footer-container{
+    grid-row: 4;
     grid-column: 1/4;
     background-color: bisque;
-    text-align: left;
-    padding: 15px;
-    padding-left: 90px;
-    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.footer-container2{
-    grid-row:3;
-    grid-column: 2/3;
-
-
-}
 .header-flex{
     display: flex;
     justify-content:space-around;
     align-items: center;
     padding-top: 20px;
 }
+
 nav a{
     font-size: 20px;
-    color:rgb(3, 89, 175)
+    color:rgb(69, 103, 69);
+    /*font-color:rgb(99, 99, 181);*/
     font-weight: bold;
     margin:0 20px;
 }
